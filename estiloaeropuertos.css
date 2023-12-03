@@ -1,12 +1,59 @@
 .intro-section, .airport {
     margin: 20px;
     padding: 15px;
-    background-color: #pink;
     border-radius: 8px;
-    /* Otros estilos según sea necesario */
+    text-align: center;
 }
 
-.airport h3, h4 {
-    color: #pink;
-    margin-bottom: 5px;
+.column {
+    display: flex; 
+    justify-content: space-between; 
+}
+.puntos1, .equipo1, .puntos2, .equipo2 {
+    width: 45%; 
+    padding: 10px; 
+    text-align: center; 
+}
+header {
+    background-color: #pink;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: pink;
+    text-decoration: none;
+}
+body {
+    font-family: Calibri, sans-serif;
+}
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fc6998; /* Color de fondo */
+    color: pink; /* Color del texto */
+    text-decoration: none; /* Sin subrayado en el texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+}
+
+/* Estilos para el botón al pasar el cursor por encima */
+.boton:hover {
+    background-color: #FF0080; /* Cambia el color de fondo al pasar el cursor */
+}
+
+/* Estilos para el botón cuando se presiona */
+.boton:active {
+    background-color: #fc6998; /* Cambia el color de fondo cuando se presiona */
 }

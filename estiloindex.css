@@ -1,20 +1,30 @@
 
-.banner {
-    width: 100%;
-    /* Agregar más estilos para el banner/slider */
+
+.welcome-section, .gallery {
+    background-color: #white; /* Color de fondo */
+    padding: 20px; /* Espacio interior */
+    text-align: center; /* Alineación del texto en el centro */
+}
+.welcome-section, .gallery h2 {
+    font-size: 24px; /* Tamaño de fuente */
+    color: #black; /* Color del texto */
 }
 
-.welcome-section, .gallery, .latest-news, .events {
-    margin: 20px;
-    padding: 15px;
-    background-color: #grey;
-    border-radius: 8px;
+.welcome-section, .gallery p {
+    font-size: 16px; /* Tamaño de fuente */
+    color: #black; /* Color del texto */
 }
 
-
-h3 {
-    color: #lightblue;
-    margin-bottom: 10px;
+.column {
+    display: flex; /* Utilizamos flexbox para alinear los elementos en columnas */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+}
+.gallery, .lastest-news, .events {
+    width: 30%; /* Ancho de cada columna */
+    padding: 10px; /* Espacio interno */
+    background-color: #white; /* Color de fondo */
+    border: 1px solid #white; /* Borde */
+    text-align: center; /* Alineación del contenido en el centro */
 }
 body {
     font-family: Calibri, sans-serif;
@@ -27,33 +37,44 @@ header {
     padding: 10px 0;
 }
 
-nav ul {
+ul {
     list-style-type: none;
     padding: 0;
 }
 
-nav ul li {
+ul li {
     display: inline;
     margin-right: 20px;
 }
 
-nav ul li a {
+ul li a {
     color: pink;
     text-decoration: none;
 }
 
-.content {
-    margin: 20px;
-    padding: 20px;
-    background-color: #green;
-}
 footer {
     text-align: center;
     padding: 20px;
     background-color: #pink;
     color: black;
 }
-h5 {
-    color: #darkblue;
-    margin-bottom: 10px;
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fc6998; /* Color de fondo */
+    color: pink; /* Color del texto */
+    text-decoration: none; /* Sin subrayado en el texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+}
+
+/* Estilos para el botón al pasar el cursor por encima */
+.boton:hover {
+    background-color: #FF0080; /* Cambia el color de fondo al pasar el cursor */
+}
+
+/* Estilos para el botón cuando se presiona */
+.boton:active {
+    background-color: #fc6998; /* Cambia el color de fondo cuando se presiona */
 }

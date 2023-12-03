@@ -1,0 +1,30 @@
+
+header {
+    background-color: #pink;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: pink;
+    text-decoration: none;
+}
+body {
+    font-family: Calibri, sans-serif;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #pink;
+    color: black;
