@@ -1,7 +1,7 @@
 
 
 .welcome-section, .gallery {
-    background-color: #white; /* Color de fondo */
+    background-color: white; /* Color de fondo */
     padding: 20px; /* Espacio interior */
     text-align: center; /* Alineación del texto en el centro */
 }
@@ -48,14 +48,25 @@
     border-radius: 10px;
 }
 
+.welcome-section, .gallery, .latest-news, .events {
+    margin: 20px;
+    padding: 15px;
+    background-color: grey;
+    border-radius: 8px;
+}
 
+
+h3 {
+    color: lightblue;
+    margin-bottom: 10px;
+}
 
 body {
     font-family: Calibri, sans-serif;
 }
 
 header {
-    background-color: #pink;
+    background-color: pink;
     color: black;
     text-align: center;
     padding: 10px 0;
@@ -76,12 +87,19 @@ ul li a {
     text-decoration: none;
 }
 
+.content {
+    margin: 20px;
+    padding: 20px;
+    background-color: green;
+}
+
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #pink;
+    background-color: pink;
     color: black;
 }
+
 .boton {
     display: inline-block;
     padding: 10px 20px;
@@ -101,4 +119,9 @@ footer {
 /* Estilos para el botón cuando se presiona */
 .boton:active {
     background-color: #fc6998; /* Cambia el color de fondo cuando se presiona */
+}
+
+h5 {
+    color: darkblue;
+    margin-bottom: 10px;
 }

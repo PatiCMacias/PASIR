@@ -1,6 +1,6 @@
 
 header {
-    background-color: #pink;
+    background-color: pink;
     color: black;
     text-align: center;
     padding: 10px 0;
@@ -26,5 +26,5 @@ body {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #pink;
+    background-color: pink;
     color: black;
