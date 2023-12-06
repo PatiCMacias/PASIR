@@ -22,10 +22,34 @@
 .gallery, .lastest-news, .events {
     width: 30%; /* Ancho de cada columna */
     padding: 10px; /* Espacio interno */
-    background-color: #white; /* Color de fondo */
-    border: 1px solid #white; /* Borde */
     text-align: center; /* Alineación del contenido en el centro */
 }
+
+.events {
+    background-image: url('evento.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Escala la imagen para cubrir todo el div */
+    background-position: center; /* Centra la imagen en el div */
+    width: 450px; /* Ancho del div */
+    height: 250px; /* Alto del div */
+    color: #fff; /* Color de texto */
+    text-align: center; /* Alineación del contenido */
+    padding: 20px; /* Espacio interior del div */
+    border-radius: 10px;
+}
+.welcome-section, {
+    background-image: url('news.jpeg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Escala la imagen para cubrir todo el div */
+    background-position: center; /* Centra la imagen en el div */
+    width: 350px; /* Ancho del div */
+    height: 150px; /* Alto del div */
+    color: #fff; /* Color de texto */
+    text-align: center; /* Alineación del contenido */
+    padding: 20px; /* Espacio interior del div */
+    border-radius: 10px;
+}
+
+
+
 body {
     font-family: Calibri, sans-serif;
 }
