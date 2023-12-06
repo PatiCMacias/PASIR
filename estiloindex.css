@@ -7,21 +7,22 @@
 .welcome-section, .gallery, .latest-news, .events {
     margin: 20px;
     padding: 15px;
-    background-color: #grey;
+    background-color: grey;
     border-radius: 8px;
 }
 
 
 h3 {
-    color: #lightblue;
+    color: lightblue;
     margin-bottom: 10px;
 }
+
 body {
     font-family: Calibri, sans-serif;
 }
 
 header {
-    background-color: #pink;
+    background-color: pink;
     color: black;
     text-align: center;
     padding: 10px 0;
@@ -45,15 +46,17 @@ nav ul li a {
 .content {
     margin: 20px;
     padding: 20px;
-    background-color: #green;
+    background-color: green;
 }
+
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #pink;
+    background-color: pink;
     color: black;
 }
+
 h5 {
-    color: #darkblue;
+    color: darkblue;
     margin-bottom: 10px;
 }
