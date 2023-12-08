@@ -42,7 +42,7 @@ header {
     font-weight: bold;
     text-align: center;
     padding: 10px 0;
-    background-image: url('fotojets.jpg');
+    background-image: url('../images/fotojets.jpg');
     background-size: cover;
     background-position: center;
 }

@@ -20,7 +20,7 @@
 }
 header {
     background-color: grey;
-    background-image: url('fotoavion.jpg'); /* Ruta de la imagen de fondo */
+    background-image: url('../images/fotoavion.jpg'); /* Ruta de la imagen de fondo */
     background-size: cover; /* Escala la imagen para cubrir todo el div */
     background-position: center;
     color: black;
