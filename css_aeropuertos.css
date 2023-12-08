@@ -1,7 +1,6 @@
 .intro-section, .airport {
     margin: 20px;
     padding: 15px;
-    background-color: pink;
     border-radius: 8px;
     text-align: center;
 }
@@ -9,14 +8,21 @@
 .column {
     display: flex; 
     justify-content: space-between; 
+    background-color: white;
+    border-radius: 8px;
 }
-.puntos1, .equipo1, .puntos2, .equipo2 {
+.puntos1, .equipo1, .puntos2, .equipo2, .puntos3, .equipo3 {
     width: 45%; 
     padding: 10px; 
     text-align: center; 
+    background-color: white;
+    border-radius: 8px;
 }
 header {
-    background-color: pink;
+    background-color: grey;
+    background-image: url('fotoavion.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Escala la imagen para cubrir todo el div */
+    background-position: center;
     color: black;
     text-align: center;
     padding: 10px 0;
@@ -58,7 +64,10 @@ body {
 .boton:active {
     background-color: #fc6998; /* Cambia el color de fondo cuando se presiona */
 }
-.airport h3, h4 {
-    color: pink;
-    margin-bottom: 5px;
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: pink;
+    color: black;
 }

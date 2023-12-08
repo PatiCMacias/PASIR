@@ -1,0 +1,89 @@
+
+
+.welcome-section, .gallery {
+    padding: 20px;
+    text-align: center; 
+}
+.welcome-section, .gallery h2 {
+    font-size: 24px; 
+    color: white; 
+}
+
+.welcome-section, .gallery p {
+    font-size: 16px; 
+    color: white; 
+}
+
+.column {
+    display: flex; 
+    justify-content: space-between; 
+}
+.gallery, .lastest-news, .events {
+    width: 30%;
+    padding: 10px; 
+    text-align: center; 
+    font-size: 16px; 
+    color: white;
+}
+
+.welcome-section, .gallery, .latest-news, .events {
+    margin: 20px;
+    padding: 15px;
+    border: 5px dashed grey;
+    border-radius: 8px;
+}
+
+body {
+    font-family: Calibri, sans-serif;
+}
+
+header {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    background-image: url('fotojets.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+ul li a {
+    color: pink;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: pink;
+    color: black;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fc6998; /* Color de fondo */
+    color: pink; /* Color del texto */
+    text-decoration: none; /* Sin subrayado en el texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+}
+
+.boton:hover {
+    background-color: #FF0080; 
+}
+
+.boton:active {
+    background-color: #fc6998; 
+}
