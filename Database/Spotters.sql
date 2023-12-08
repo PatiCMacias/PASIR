@@ -24,12 +24,13 @@ USE `Spotters` ;
 DROP TABLE IF EXISTS `Spotters`.`AEROPUERTOS` ;
 
 CREATE TABLE IF NOT EXISTS `Spotters`.`AEROPUERTOS` (
-  `idAEROPUERTOS` INT NOT NULL,
-  `nombre` VARCHAR(45) NULL,
-  `ubicacion` VARCHAR(45) NULL,
-  `civil/militar` VARCHAR(45) NULL,
-  PRIMARY KEY (`idAEROPUERTOS`))
-ENGINE = InnoDB;
+                                                        `idAEROPUERTOS` VARCHAR(45) NOT NULL,
+    `nombre` VARCHAR(45) NULL,
+    `ubicacion` VARCHAR(45) NULL,
+    `civil/militar` VARCHAR(45) NULL,
+    PRIMARY KEY (`idAEROPUERTOS`))
+    ENGINE = InnoDB;
+
 
 
 -- -----------------------------------------------------
@@ -38,18 +39,20 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `Spotters`.`AVIONES` ;
 
 CREATE TABLE IF NOT EXISTS `Spotters`.`AVIONES` (
-  `idAVION` INT NOT NULL,
-  `modelo` VARCHAR(45) NULL,
-  `tipo` VARCHAR(45) NULL,
-  `alcance` VARCHAR(45) NULL,
-  `idAEROPUERTOS` VARCHAR(45) NULL,
-  PRIMARY KEY (`idAVION`),
-  CONSTRAINT `idAEROPUERTOS`
-    FOREIGN KEY ()
-    REFERENCES `Spotters`.`AEROPUERTOS` ()
+                                                    `idAVION` VARCHAR(45) NOT NULL,
+    `modelo` VARCHAR(45) NULL,
+    `tipo` VARCHAR(45) NULL,
+    `alcance` VARCHAR(45) NULL,
+    `idAEROPUERTOS` VARCHAR(45) NULL,
+    PRIMARY KEY (`idAVION`),
+    CONSTRAINT `fk_aeropuerto`
+    FOREIGN KEY (`idAEROPUERTOS`)
+    REFERENCES `AEROPUERTOS` (`idAEROPUERTOS`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+    ENGINE = InnoDB;
+
+
 
 
 SET SQL_MODE=@OLD_SQL_MODE;
@@ -61,10 +64,10 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `Spotters`;
-INSERT INTO `Spotters`.`AEROPUERTOS` (`idAEROPUERTOS`, `nombre`, `ubicacion`, `civil/militar`) VALUES (LEMD, 'Madrid Barajas', 'Barajas', 'civil');
-INSERT INTO `Spotters`.`AEROPUERTOS` (`idAEROPUERTOS`, `nombre`, `ubicacion`, `civil/militar`) VALUES (LETO, 'Base Aerea Torrejon', 'Torrejon', 'militar');
-INSERT INTO `Spotters`.`AEROPUERTOS` (`idAEROPUERTOS`, `nombre`, `ubicacion`, `civil/militar`) VALUES (LEGT, 'Base Aerea Getafe', 'Getafe', 'militar');
-INSERT INTO `Spotters`.`AEROPUERTOS` (`idAEROPUERTOS`, `nombre`, `ubicacion`, `civil/militar`) VALUES (LECV, 'Base Aerea Cuatro Vientos', 'Cuatro Vientos ', 'militar');
+INSERT INTO `Spotters`.`AEROPUERTOS` (`idAEROPUERTOS`, `nombre`, `ubicacion`, `civil/militar`) VALUES ('LEMD', 'Madrid Barajas', 'Barajas', 'civil');
+INSERT INTO `Spotters`.`AEROPUERTOS` (`idAEROPUERTOS`, `nombre`, `ubicacion`, `civil/militar`) VALUES ('LETO', 'Base Aerea Torrejon', 'Torrejon', 'militar');
+INSERT INTO `Spotters`.`AEROPUERTOS` (`idAEROPUERTOS`, `nombre`, `ubicacion`, `civil/militar`) VALUES ('LEGT', 'Base Aerea Getafe', 'Getafe', 'militar');
+INSERT INTO `Spotters`.`AEROPUERTOS` (`idAEROPUERTOS`, `nombre`, `ubicacion`, `civil/militar`) VALUES ('LECV', 'Base Aerea Cuatro Vientos', 'Cuatro Vientos ', 'militar');
 
 COMMIT;
 
@@ -74,24 +77,23 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `Spotters`;
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES (F18, 'F/A-18C', 'reactor', '3300KM', 'LETO');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES (F900, 'Falcon 900B', 'reactor', '6100KM', 'LETO');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES (A310, 'Airbus A310', 'reactor', '8000KM', 'LETO');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES (A332, 'Airbus A330-200', 'reactor', '13450KM', 'LETO');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES (CL215, 'Bombardier Canadair CL-215', 'helice', '2200KM', 'LETO');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES (C295, 'Casa C-295', 'turbohelice', '5600KM', 'LEGT');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES (NH90, 'NHIndustries NH90', 'ala rotatoria', '982KM', 'LECV');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES (AS332, 'Eurocopter AS332 Super Puma', 'ala rotatoria', '866KM', 'LECV');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES (A319, 'Airbus A319', 'reactor', '6900KM', 'LEMD');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES (A321, 'Airbus A320-100', 'reactor', '6100KM', 'LEMD');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES (A332, 'Airbus A330-200', 'reactor', '13450KM', 'LEMD');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES (A359, 'Airbus A350-900', 'reactor', '15000KM', 'LEMD');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES (B738, 'Boeing 737-800', 'reactor', '5700KM', 'LEMD');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES (B748, 'Boeing 747-800', 'reactor', '15000KM', 'LEMD');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES (AT7, 'ATR 72', 'turbo helice', '1520KM', 'LEMD');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES (E195, 'Embraer 195', 'turbo helice', '4200KM', 'LEMD');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES (B779, 'Boeing 777-900', 'reactor', '12000KM', 'LEMD');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES (B789, 'Boeing 787-900', 'reactor', '15700KM', NULL);
+INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('F18', 'F/A-18C', 'reactor', '3300KM', 'LETO');
+INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('F900', 'Falcon 900B', 'reactor', '6100KM', 'LETO');
+INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('A310', 'Airbus A310', 'reactor', '8000KM', 'LETO');
+INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('A332', 'Airbus A330-200', 'reactor', '13450KM', 'LETO');
+INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('CL215', 'Bombardier Canadair CL-215', 'helice', '2200KM', 'LETO');
+INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('C295', 'Casa C-295', 'turbohelice', '5600KM', 'LEGT');
+INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('NH90', 'NHIndustries NH90', 'ala rotatoria', '982KM', 'LECV');
+INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('AS332', 'Eurocopter AS332 Super Puma', 'ala rotatoria', '866KM', 'LECV');
+INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('A319', 'Airbus A319', 'reactor', '6900KM', 'LEMD');
+INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('A321', 'Airbus A320-100', 'reactor', '6100KM', 'LEMD');
+INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('A359', 'Airbus A350-900', 'reactor', '15000KM', 'LEMD');
+INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('B738', 'Boeing 737-800', 'reactor', '5700KM', 'LEMD');
+INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('B748', 'Boeing 747-800', 'reactor', '15000KM', 'LEMD');
+INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('AT7', 'ATR 72', 'turbo helice', '1520KM', 'LEMD');
+INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('E195', 'Embraer 195', 'turbo helice', '4200KM', 'LEMD');
+INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('B779', 'Boeing 777-900', 'reactor', '12000KM', 'LEMD');
+INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('B789', 'Boeing 787-900', 'reactor', '15700KM', NULL);
 
 COMMIT;
 
