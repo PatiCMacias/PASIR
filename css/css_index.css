@@ -60,7 +60,14 @@ ul li {
 ul li a {
     color: pink;
     text-decoration: none;
+    font-size: 16px; 
+    transition: font-size 0.3s ease;
 }
+
+ul li a:hover {
+font-size: 20px;
+color: white;
+  }
 
 footer {
     text-align: center;
@@ -77,11 +84,15 @@ footer {
     text-decoration: none; /* Sin subrayado en el texto */
     border: none; /* Sin borde */
     border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+    cursor: pointer;
+    font-size: 16px;
+    transition: font-size 0.3s ease; /* Cambia el cursor al pasar por encima del botón */
 }
 
 .boton:hover {
-    background-color: #FF0080; 
+    background-color: #FF0080;
+    font-size: 20px;
+    color: white; 
 }
 
 .boton:active {
