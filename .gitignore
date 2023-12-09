@@ -326,5 +326,8 @@ $RECYCLE.BIN/
 *.lnk
 
 Database/db_connect.php
+/Database/db_connect.php
+./Database/db_connect.php
+../Database/db_connect.php
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,windows,linux,visualstudiocode,sublimetext,intellij+all,webstorm+all,phpstorm+all
