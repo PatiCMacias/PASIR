@@ -10,8 +10,8 @@
     <h1>ESP.Potters</h1>
     <nav>
         <ul>
-            <li><a href="../html/index.html">Home</a></li>
-            <li><a href="../html/aeropuertos.html">Aeropuertos</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aeropuertos.html">Aeropuertos</a></li>
             <li><a href="galeria.php">Galería</a></li>
 <!--            <li><a href="./contacto.html">Contacto</a></li>-->
         </ul>
@@ -26,21 +26,26 @@
     <div class="photo-gallery">
         <h3>Aviones en Exhibición</h3>
         <?php
-        include './db_connect.php'; // Asegúrate de que la ruta es correcta
+        include '../Database/db_connect.php'; // Asegúrate de que la ruta es correcta
 
         // SQL para obtener información de los aviones
-        $sql = "SELECT modelo, tipo, alcance FROM aviones";
+        $sql = "SELECT modelo, tipo, alcance FROM AVIONES";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
-            // Mostrar los datos de cada avión
+            // Empezar la tabla
+            echo "<table>";
+            // Crear la fila de encabezados
+            echo "<tr><th>Modelo</th><th>Tipo</th><th>Alcance (km)</th></tr>";
+            // Mostrar los datos de cada avión en filas de la tabla
             while($row = $result->fetch_assoc()) {
-                echo "<div class='aircraft'>";
-                echo "<h4>" . htmlspecialchars($row["modelo"]) . "</h4>";
-                echo "<p>Tipo: " . htmlspecialchars($row["tipo"]) . "</p>";
-                echo "<p>Alcance: " . htmlspecialchars($row["alcance"]) . " km</p>";
-                echo "</div>";
+                echo "<tr>";
+                echo "<td>" . htmlspecialchars($row["modelo"]) . "</td>";
+                echo "<td>" . htmlspecialchars($row["tipo"]) . "</td>";
+                echo "<td>" . htmlspecialchars($row["alcance"]) . "</td>";
+                echo "</tr>";
             }
+            echo "</table>"; // Finalizar la tabla
         } else {
             echo "<p>No se encontraron aviones.</p>";
         }
