@@ -76,18 +76,18 @@ footer {
     color: black;
 }
 
-.boton {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #fc6998; /* Color de fondo */
-    color: pink; /* Color del texto */
-    text-decoration: none; /* Sin subrayado en el texto */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer;
-    font-size: 16px;
-    transition: font-size 0.3s ease; /* Cambia el cursor al pasar por encima del botón */
-}
+/*.boton {*/
+/*    display: inline-block;*/
+/*    padding: 10px 20px;*/
+/*    background-color: #fc6998; !* Color de fondo *!*/
+/*    color: pink; !* Color del texto *!*/
+/*    text-decoration: none; !* Sin subrayado en el texto *!*/
+/*    border: none; !* Sin borde *!*/
+/*    border-radius: 5px; !* Bordes redondeados *!*/
+/*    cursor: pointer;*/
+/*    font-size: 16px;*/
+/*    transition: font-size 0.3s ease; !* Cambia el cursor al pasar por encima del botón *!*/
+/*}*/
 
 .boton:hover {
     background-color: #FF0080;
