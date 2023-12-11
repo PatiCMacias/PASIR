@@ -24,7 +24,7 @@ USE `Spotters` ;
 DROP TABLE IF EXISTS `Spotters`.`AEROPUERTOS` ;
 
 CREATE TABLE IF NOT EXISTS `Spotters`.`AEROPUERTOS` (
-                                                        `idAEROPUERTOS` VARCHAR(45) NOT NULL,
+    `idAEROPUERTOS` VARCHAR(45) NOT NULL,
     `nombre` VARCHAR(45) NULL,
     `ubicacion` VARCHAR(45) NULL,
     `civil/militar` VARCHAR(45) NULL,
@@ -39,10 +39,11 @@ CREATE TABLE IF NOT EXISTS `Spotters`.`AEROPUERTOS` (
 DROP TABLE IF EXISTS `Spotters`.`AVIONES` ;
 
 CREATE TABLE IF NOT EXISTS `Spotters`.`AVIONES` (
-                                                    `idAVION` VARCHAR(45) NOT NULL,
+    `idAVION` VARCHAR(45) NOT NULL,
     `modelo` VARCHAR(45) NULL,
     `tipo` VARCHAR(45) NULL,
     `alcance` VARCHAR(45) NULL,
+    `img` VARCHAR(255) NULL,
     `idAEROPUERTOS` VARCHAR(45) NULL,
     PRIMARY KEY (`idAVION`),
     CONSTRAINT `fk_aeropuerto`
@@ -53,6 +54,18 @@ CREATE TABLE IF NOT EXISTS `Spotters`.`AVIONES` (
     ENGINE = InnoDB;
 
 
+-- -----------------------------------------------------
+-- Table `Spotters`.`USUARIOS`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `Spotters`.`USUARIOS` ;
+
+CREATE TABLE IF NOT EXISTS `Spotters`.`USUARIOS` (
+    `id` VARCHAR(50) NOT NULL,
+    `nombre` VARCHAR(50) NOT NULL,
+    `email` VARCHAR(45) NULL,
+    `password` VARCHAR(45) NULL,
+    PRIMARY KEY (`id`))
+    ENGINE = InnoDB;
 
 
 SET SQL_MODE=@OLD_SQL_MODE;
