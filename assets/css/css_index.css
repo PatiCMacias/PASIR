@@ -4,12 +4,12 @@
     padding: 20px;
     text-align: center; 
 }
-.welcome-section, .gallery h2 {
-    font-size: 24px; 
+.welcome-section .gallery h2 {
+    font-size: 24px;
     color: white; 
 }
 
-.welcome-section, .gallery p {
+.welcome-section .gallery p {
     font-size: 16px; 
     color: white; 
 }
@@ -42,7 +42,7 @@ header {
     font-weight: bold;
     text-align: center;
     padding: 10px 0;
-    background-image: url('../images/fotojets.jpg');
+    background-image: url('../../images/fotojets.jpg');
     background-size: cover;
     background-position: center;
 }

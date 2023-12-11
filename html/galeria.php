@@ -8,7 +8,7 @@
     <div class="photo-gallery">
         <h3>Aviones en Exhibición</h3>
         <?php
-        include '../Database/db_connect.php'; // Asegúrate de que la ruta es correcta
+        include '../Database/db_connect.php';
 
         // SQL para obtener información de los aviones
         $sql = "SELECT modelo, tipo, alcance FROM AVIONES";
@@ -25,6 +25,7 @@
                 echo "<td>" . htmlspecialchars($row["modelo"]) . "</td>";
                 echo "<td>" . htmlspecialchars($row["tipo"]) . "</td>";
                 echo "<td>" . htmlspecialchars($row["alcance"]) . "</td>";
+//                echo "<td>" . htmlspecialchars($row["img"]) . "</td>";
                 echo "</tr>";
             }
             echo "</table>"; // Finalizar la tabla
@@ -37,8 +38,8 @@
 
     <!-- Continúa con el pie de página... -->
 
-<div class="content">
-    <!-- Contenido específico de cada página -->
-</div>
+    <div class="content">
+        <!-- Contenido específico de cada página -->
+    </div>
 
 <?php include 'footer.php'; ?>
