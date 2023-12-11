@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html lang="es-ES">
-<head>
-    <meta charset="UTF-8">
-    <title>ESP.POTTERS</title>
-    <link rel="stylesheet" type="text/css" href="../css/css_galeria.css">
-</head>
-<body>
-<header>
-    <h1>ESP.Potters</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aeropuertos.html">Aeropuertos</a></li>
-            <li><a href="galeria.php">Galería</a></li>
-<!--            <li><a href="./contacto.html">Contacto</a></li>-->
-        </ul>
-    </nav>
+<?php include 'header.php'; ?>
 
 
     <div class="photo-gallery-intro">
@@ -25,7 +8,7 @@
 
     <div class="photo-gallery">
         <h3>Aviones en Exhibición</h3>
-    
+
 
 
 
@@ -48,7 +31,7 @@
         </form>
 
         <div class="separador"></div>
-        
+
 
         <h2>Registro</h2>
         <form action="register.php" method="post">
@@ -67,9 +50,5 @@
             <button type="submit" class="boton">Registrarse</button>
         </form>
     </div>
-</header>
-<footer>
-    <p>&copy; 2023 ESP.Potters</p>
-</footer>
-</body>
-</html>
+
+<?php include 'footer.php'; ?>

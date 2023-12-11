@@ -1,5 +1,4 @@
 <?php
-// db_connect.php
 $servername = "127.0.0.1"; // Asume que el servidor de la base de datos está en la misma máquina
 $username = "root"; // El usuario de la base de datos
 $password = "my_root_password"; // La contraseña del usuario de la base de datos

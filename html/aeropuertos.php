@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html lang="es-ES">
-<head>
-    <meta charset="UTF-8">
-    <title>ESP.POTTERS</title>
-    <link rel="stylesheet" type="text/css" href="../css/css_aeropuertos.css">
-</head>
-<body>
-    <header>
-        <h1>ESP. Potters</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aeropuertos.html">Aeropuertos</a></li>
-                <li><a href="galeria.php">Galería</a></li>
-<!--                <li><a href="contacto.html">Contacto</a></li>-->
-            </ul>
-        </nav>
+<?php include 'header.php'; ?>
 
 <div class="intro-section">
     <h2>Spotting en la Comunidad de Madrid</h2>
@@ -101,10 +84,4 @@ Accesibilidad: El aeropuerto es accesible en coche, autobús y metro. Hay varios
     </div>
 </div>
 
-    </header>
-
-    <footer>
-        <p>&copy; 2023 Esp.potters</p>
-    </footer>
-</body>
-</html>
+<?php include 'footer.php'; ?>

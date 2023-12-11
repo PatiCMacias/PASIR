@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="es-ES">
-    <head>
-        <meta charset="UTF-8">
-        <title>ESP.Potters</title>
-        <link rel="stylesheet" type="text/css" href="../css/css_index.css">
-    </head>
-    <body>
-        <header>
-            <h1>ESP.POTTERS</h1>
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./aeropuertos.html">Aeropuertos</a></li>
-                    <li><a href="galeria.php">Galería</a></li>
-                </ul>
-            </nav>
+<?php include 'header.php'; ?>
 
     <div class="welcome-section">
         <h2>Bienvenidos</h2>
@@ -63,11 +47,4 @@
         </nav>
     </div>
 
-
-        </header>
-
-        <footer>
-            <p>&copy; 2023 ESP. Potters</p>
-        </footer>
-    </body>
-</html>
+<?php include 'footer.php'; ?>

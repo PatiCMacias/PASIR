@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html lang="es-ES">
-<head>
-    <meta charset="UTF-8">
-    <title>ESP.POTTERS</title>
-    <link rel="stylesheet" type="text/css" href="../css/css_galeria.css">
-</head>
-<body>
-<header>
-    <h1>ESP.Potters</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aeropuertos.html">Aeropuertos</a></li>
-            <li><a href="galeria.php">Galería</a></li>
-<!--            <li><a href="./contacto.html">Contacto</a></li>-->
-        </ul>
-    </nav>
-
+<?php include 'header.php'; ?>
 
     <div class="photo-gallery-intro">
         <h2>Galería de Fotos</h2>
@@ -38,7 +20,7 @@
             // Crear la fila de encabezados
             echo "<tr><th>Modelo</th><th>Tipo</th><th>Alcance (km)</th></tr>";
             // Mostrar los datos de cada avión en filas de la tabla
-            while($row = $result->fetch_assoc()) {
+            while ($row = $result->fetch_assoc()) {
                 echo "<tr>";
                 echo "<td>" . htmlspecialchars($row["modelo"]) . "</td>";
                 echo "<td>" . htmlspecialchars($row["tipo"]) . "</td>";
@@ -55,14 +37,8 @@
 
     <!-- Continúa con el pie de página... -->
 
-</header>
-
 <div class="content">
     <!-- Contenido específico de cada página -->
 </div>
 
-<footer>
-    <p>&copy; 2023 ESP.Potters</p>
-</footer>
-</body>
-</html>
+<?php include 'footer.php'; ?>
