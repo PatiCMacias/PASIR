@@ -11,27 +11,40 @@
         include '../Database/db_connect.php';
 
         // SQL para obtener información de los aviones
-        $sql = "SELECT modelo, tipo, alcance FROM AVIONES";
+        $sql = "SELECT modelo, tipo, alcance, img FROM AVIONES";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
             // Empezar la tabla
             echo "<table>";
-            // Crear la fila de encabezados
-            echo "<tr><th>Modelo</th><th>Tipo</th><th>Alcance (km)</th></tr>";
+            // Cabecera de la tabla
+            echo "<thead>
+        <tr>
+            <th>Modelo</th>
+            <th>Tipo</th>
+            <th>Alcance (km)</th>
+            <th style='width: 100px'>img</th>
+        </tr>
+    </thead>";
+
+            // Cuerpo de la tabla
+            echo "<tbody>";
             // Mostrar los datos de cada avión en filas de la tabla
             while ($row = $result->fetch_assoc()) {
                 echo "<tr>";
                 echo "<td>" . htmlspecialchars($row["modelo"]) . "</td>";
                 echo "<td>" . htmlspecialchars($row["tipo"]) . "</td>";
                 echo "<td>" . htmlspecialchars($row["alcance"]) . "</td>";
-//                echo "<td>" . htmlspecialchars($row["img"]) . "</td>";
+                echo "<td><img style='width: 100px;' src='" . htmlspecialchars($row["img"]) . "'></td>";
                 echo "</tr>";
             }
+            echo "</tbody>";
+
             echo "</table>"; // Finalizar la tabla
         } else {
             echo "<p>No se encontraron aviones.</p>";
         }
+
         $conn->close();
         ?>
     </div>

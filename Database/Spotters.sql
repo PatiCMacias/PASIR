@@ -90,23 +90,37 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `Spotters`;
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('F18', 'F/A-18C', 'reactor', '3300KM', 'LETO');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('F900', 'Falcon 900B', 'reactor', '6100KM', 'LETO');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('A310', 'Airbus A310', 'reactor', '8000KM', 'LETO');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('A332', 'Airbus A330-200', 'reactor', '13450KM', 'LETO');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('CL215', 'Bombardier Canadair CL-215', 'helice', '2200KM', 'LETO');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('C295', 'Casa C-295', 'turbohelice', '5600KM', 'LEGT');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('NH90', 'NHIndustries NH90', 'ala rotatoria', '982KM', 'LECV');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('AS332', 'Eurocopter AS332 Super Puma', 'ala rotatoria', '866KM', 'LECV');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('A319', 'Airbus A319', 'reactor', '6900KM', 'LEMD');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('A321', 'Airbus A320-100', 'reactor', '6100KM', 'LEMD');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('A359', 'Airbus A350-900', 'reactor', '15000KM', 'LEMD');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('B738', 'Boeing 737-800', 'reactor', '5700KM', 'LEMD');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('B748', 'Boeing 747-800', 'reactor', '15000KM', 'LEMD');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('AT7', 'ATR 72', 'turbo helice', '1520KM', 'LEMD');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('E195', 'Embraer 195', 'turbo helice', '4200KM', 'LEMD');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('B779', 'Boeing 777-900', 'reactor', '12000KM', 'LEMD');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`) VALUES ('B789', 'Boeing 787-900', 'reactor', '15700KM', NULL);
+INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('F18', 'F/A-18C', 'reactor', '3300KM', 'LETO', '/PASIR/images/Aviones/F18_LETO.jpg');
+INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('F900', 'Falcon 900B', 'reactor', '6100KM', 'LETO', '/PASIR/images/Aviones/F900_LETO.jpg');
+INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('A310', 'Airbus A310', 'reactor', '8000KM', 'LETO', '/PASIR/images/Aviones/A310_LETO.jpg');
+INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('A332', 'Airbus A330-200', 'reactor', '13450KM', 'LETO', '/PASIR/images/Aviones/A332_LETO_4.jpg');
+INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('CL215', 'Bombardier Canadair CL-215', 'helice', '2200KM', 'LETO', '/PASIR/images/Aviones/CL215_LETO.jpg');
+INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('C295', 'Casa C-295', 'turbohelice', '5600KM', 'LEGT', '/PASIR/images/Aviones/CL215_LETO.jpg');
+INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('NH90', 'NHIndustries NH90', 'ala rotatoria', '982KM', 'LECV', '/PASIR/images/Aviones/NH90_LECV.jpg');
+# INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('AS332', 'Eurocopter AS332 Super Puma', 'ala rotatoria', '866KM', 'LECV', '/PASIR/images/Aviones/');
+# INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('A319', 'Airbus A319', 'reactor', '6900KM', 'LEMD', '/PASIR/images/Aviones/');
+# INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('A321', 'Airbus A320-100', 'reactor', '6100KM', 'LEMD', '/PASIR/images/Aviones/');
+# INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('A359', 'Airbus A350-900', 'reactor', '15000KM', 'LEMD', '/PASIR/images/Aviones/');
+# INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('B738', 'Boeing 737-800', 'reactor', '5700KM', 'LEMD', '/PASIR/images/Aviones/');
+# INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('B748', 'Boeing 747-800', 'reactor', '15000KM', 'LEMD', '/PASIR/images/Aviones/');
+# INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('AT7', 'ATR 72', 'turbo helice', '1520KM', 'LEMD', '/PASIR/images/Aviones/');
+# INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('E195', 'Embraer 195', 'turbo helice', '4200KM', 'LEMD', '/PASIR/images/Aviones/');
+# INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('B779', 'Boeing 777-900', 'reactor', '12000KM', 'LEMD', '/PASIR/images/Aviones/');
+# INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('B789', 'Boeing 787-900', 'reactor', '15700KM', NULL, '/PASIR/images/Aviones/');
+
+COMMIT;
+
+-- -----------------------------------------------------
+-- Data for table `Spotters`.`USUARIOS`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `Spotters`;
+INSERT INTO Spotters.USUARIOS (id, nombre, email, password) VALUES
+(UUID(), 'Usuario1', 'usuario1@example.com', 'contrasena1'),
+(UUID(), 'Usuario2', 'usuario2@example.com', 'contrasena2'),
+(UUID(), 'Usuario3', 'usuario3@example.com', 'contrasena3'),
+(UUID(), 'Usuario4', 'usuario4@example.com', 'contrasena4'),
+(UUID(), 'Usuario5', 'usuario5@example.com', 'contrasena5');
 
 COMMIT;
 
