@@ -18,7 +18,7 @@
             <form class="form-horizontal form-material" id="loginform" autocomplete="off">
 
                     <a href="javascript:void(0)" class="text-center db">
-    <!--                    <img src="./assets/images/logo-icon.png" alt="Home" />-->
+    <!--                    
                         <br/>
     <!--                    <img src="./assets/images/logo-text.png" alt="Home" />-->
                     </a>

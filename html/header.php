@@ -32,7 +32,6 @@ if (!isset($_SESSION['usuario_id'])) {
             <li><a href="/PASIR">Home</a></li>
             <li><a href="/PASIR/html/aeropuertos.php">Aeropuertos</a></li>
             <li><a href="/PASIR/html/galeria.php">Galería</a></li>
-            <!-- <li><a href="./contacto.html">Contacto</a></li> -->
             <li><a href="/PASIR/html/logout.php">Cerrar Sesión</a></li>
         </ul>
     </nav>
