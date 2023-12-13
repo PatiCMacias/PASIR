@@ -1,6 +1,6 @@
 <?php include 'header.php'; ?>
 
-    <div style="background-image:url(../images/background/A310_LETO_5.jpg); background-size: cover">
+    <div style="background-image:url(../images/background/fotoavion.jpg); background-size: cover">
 
 
         <div class="intro-section">
