@@ -97,7 +97,7 @@ INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAER
 INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('CL215', 'Bombardier Canadair CL-215', 'helice', '2200KM', 'LETO', '/PASIR/images/Aviones/CL215_LETO.jpg');
 INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('C295', 'Casa C-295', 'turbohelice', '5600KM', 'LEGT', '/PASIR/images/Aviones/CL215_LETO.jpg');
 INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('NH90', 'NHIndustries NH90', 'ala rotatoria', '982KM', 'LECV', '/PASIR/images/Aviones/NH90_LECV.jpg');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('AS332', 'Eurocopter AS332 Super Puma', 'ala rotatoria', '866KM', 'LECV', '/PASIR/images/Aviones/');
+INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('AS332', 'Eurocopter AS332 Super Puma', 'ala rotatoria', '866KM', 'LECV', '/PASIR/images/Aviones/S332_LECV.jpg');
 INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('A319', 'Airbus A319', 'reactor', '6900KM', 'LEMD', '/PASIR/images/Aviones/A319_LEMD.jpg');
 INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('A321', 'Airbus A320-100', 'reactor', '6100KM', 'LEMD', '/PASIR/images/Aviones/A321_LEMD.jpg');
 INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('B738', 'Boeing 737-800', 'reactor', '5700KM', 'LEMD', '/PASIR/images/Aviones/B738_LEMD.jpg');

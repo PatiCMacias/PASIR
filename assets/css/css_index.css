@@ -1,4 +1,4 @@
-welcome-section {
+.welcome-section {
     padding: 20px;
     text-align: center;
     font-family: Calibri, sans-serif;
@@ -11,6 +11,14 @@ welcome-section {
 .welcome-section p {
     font-size: 16px;
 }
+
+
+.column {
+    display: flex;
+    justify-content: center; /* Ajusta esto según necesites */
+text-align: center;
+}
+
 
 .lastest-news, .events {
     width: 50%;
@@ -41,6 +49,7 @@ header {
     background-position: center;
 }
 
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -54,11 +63,16 @@ ul li {
 ul li a {
     text-decoration: none;
     font-size: 16px;
+    color:pink;
+}
+
+ul li a:visited {
+    color: pink;
 }
 
 ul li a:hover {
     font-size: 20px;
-    color: white;
+    color: #fc6998;
 }
 
 footer {
