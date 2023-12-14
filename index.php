@@ -14,13 +14,13 @@
         <div class="gallery">
             <h2>Galería Destacada</h2>
             <p>En esta sección podrás ver las mejores capturas.</p>
-            <a href="html/galeria.php" class="boton">Entra y disfruta &#128640;</a>
+            <a href="html/galeria.php" class="boton">Entra y disfruta &#fc6998;</a>
         </div>
 
         <div class="latest-news">
             <h2>Últimas Noticias</h2>
             <p>¿Quieres estar al día de las últimas novedades en aviación?</p>
-            <a href="https://aviaciondigital.com/" class="boton">Entérate de todo &#128196;</a>
+            <a href="https://aviaciondigital.com/" class="boton">Entérate de todo &#fc6998;</a>
         </div>
         <div class="events">
             <h2>Próximos Eventos</h2>

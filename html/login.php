@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<section id="wrapper" class="login-register login-sidebar" style="background-image:url(../images/background/A310_LETO_5.jpg);">
+<section id="wrapper" class="login-register login-sidebar" style="background-image:url(../images/background/A310_LETO_4.jpg);">
     <div class="login-box card">
         <div class="card-body">
 
