@@ -102,7 +102,6 @@ INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAER
 INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('A321', 'Airbus A320-100', 'reactor', '6100KM', 'LEMD', '/PASIR/images/Aviones/A321_LEMD.jpg');
 INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('B738', 'Boeing 737-800', 'reactor', '5700KM', 'LEMD', '/PASIR/images/Aviones/B738_LEMD.jpg');
 INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('B748', 'Boeing 747-800', 'reactor', '15000KM', 'LEMD', '/PASIR/images/Aviones/B748_LEMD.jpg');
-INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('AT7', 'ATR 72', 'turbo helice', '1520KM', 'LEMD', '/PASIR/images/Aviones/AT7_LEMD.jpg');
 INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('B779', 'Boeing 777-900', 'reactor', '12000KM', 'LEMD', '/PASIR/images/Aviones/B779_LEMD.jpg');
 INSERT INTO `Spotters`.`AVIONES` (`idAVION`, `modelo`, `tipo`, `alcance`, `idAEROPUERTOS`, `img`) VALUES ('B789', 'Boeing 787-900', 'reactor', '15700KM', 'LEMD', '/PASIR/images/Aviones/B789_LEMD.jpg');
 

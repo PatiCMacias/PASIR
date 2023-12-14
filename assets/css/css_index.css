@@ -6,12 +6,12 @@
 }
 .welcome-section .gallery h2 {
     font-size: 24px;
-    color: white; 
+    
 }
 
 .welcome-section .gallery p {
     font-size: 16px; 
-    color: white; 
+  
 }
 
 .column {
@@ -23,8 +23,7 @@
     padding: 10px; 
     text-align: center; 
     font-size: 16px; 
-    color: white;
-}
+  }
 
 .welcome-section, .gallery, .latest-news, .events {
     margin: 20px;
@@ -35,6 +34,10 @@
 
 body {
     font-family: Calibri, sans-serif;
+    color: black;
+    background-image: url('../../images/fotojets.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 header {

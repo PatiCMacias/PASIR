@@ -1,6 +1,6 @@
 <?php include 'header.php'; ?>
 
-<div style="background-image:url(../images/background/A310_LETO_5.jpg); background-size: cover">
+<div style="background-image:url(../images/background/fotoevento.jpg); background-size: cover">
     <div class="photo-gallery-intro">
         <h2>Galería de Fotos</h2>
         <p>Explora nuestra colección de impresionantes fotografías de aviones.</p>
