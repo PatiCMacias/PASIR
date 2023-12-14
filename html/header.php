@@ -29,7 +29,7 @@ if (!isset($_SESSION['usuario_id'])) {
     <h1>ESP.Potters</h1>
     <nav>
         <ul>
-            <li><a href="/PASIR">Home</a></li>
+            <li><a href="/PASIR/index.php">Home</a></li>
             <li><a href="/PASIR/html/aeropuertos.php">Aeropuertos</a></li>
             <li><a href="/PASIR/html/galeria.php">Galería</a></li>
             <li><a href="/PASIR/html/logout.php">Cerrar Sesión</a></li>
