@@ -17,9 +17,9 @@ if (!isset($_SESSION['usuario_id'])) {
 <head>
     <meta charset="UTF-8">
     <title>ESP.Potters</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/css_index.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/css_galeria.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/css_aeropuertos.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/css_index.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/login.css">
 

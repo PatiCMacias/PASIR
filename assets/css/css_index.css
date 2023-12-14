@@ -1,119 +1,73 @@
-
-
 welcome-section {
-padding : 20px;
-text-align : center;
-font-family : Calibri, sans-serif;
+    padding: 20px;
+    text-align: center;
+    font-family: Calibri, sans-serif;
 }
+
 .welcome-section h2 {
-font-size : 24px;
+    font-size: 24px;
 }
+
 .welcome-section p {
-font-size : 16px;
+    font-size: 16px;
 }
+
 .lastest-news, .events {
-width : 50%;
-padding : 10px;
-text-align : center;
-font-size : 16px;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
 }
+
 .welcome-section, .latest-news, .events {
-margin : 20px;
-padding : 15px;
+    margin: 20px;
+    padding: 15px;
 }
+
 body {
-font-family : Calibri, sans-serif;
-color : black;
-background-image : url('../../images/fotojets.jpg');
-background-position : center;
+    font-family: Calibri, sans-serif;
+    color: black;
+    /*background-image: url('../../images/fotojets.jpg');*/
+    background-position: center;
 }
+
 header {
-color : white;
-font-weight : bold;
-text-align : center;
-padding : 10px 0;
-background-image : url('../../images/fotojets.jpg');
-background-position : center;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    background-image: url('../../images/fotojets.jpg');
+    background-size: cover;
+    background-position: center;
 }
+
 ul {
-list-style-type : none;
-padding : 0;
+    list-style-type: none;
+    padding: 0;
 }
+
 ul li {
-display : inline;
-margin-right : 20px;
+    display: inline;
+    margin-right: 20px;
 }
+
 ul li a {
-text-decoration : none;
-font-size : 16px;
+    text-decoration: none;
+    font-size: 16px;
 }
+
 ul li a:hover {
-font-size : 20px;
-color : white;
+    font-size: 20px;
+    color: white;
 }
+
 footer {
-text-align : center;
-padding : 20px;
-color : black;
+    text-align: center;
+    padding: 20px;
+    background-color: pink;
+    color: black;
 }
+
 .boton:active {
-background-color : #fc6998;
-welcome-section {
-padding : 20px;
-text-align : center;
-font-family : Calibri, sans-serif;
-}
-.welcome-section h2 {
-font-size : 24px;
-}
-.welcome-section p {
-font-size : 16px;
-}
-.lastest-news, .events {
-width : 50%;
-padding : 10px;
-text-align : center;
-font-size : 16px;
-}
-.welcome-section, .latest-news, .events {
-margin : 20px;
-padding : 15px;
-}
-body {
-font-family : Calibri, sans-serif;
-color : black;
-background-image : url('../../images/fotojets.jpg');
-background-position : center;
-}
-header {
-color : white;
-font-weight : bold;
-text-align : center;
-padding : 10px 0;
-background-image : url('../../images/fotojets.jpg');
-background-position : center;
-}
-ul {
-list-style-type : none;
-padding : 0;
-}
-ul li {
-display : inline;
-margin-right : 20px;
-}
-ul li a {
-text-decoration : none;
-font-size : 16px;
-}
-ul li a:hover {
-font-size : 20px;
-color : white;
-}
-footer {
-text-align : center;
-padding : 20px;
-color : black;
-}
-.boton:active {
-background-color : #fc6998;
+    background-color: #fc6998;
 }
