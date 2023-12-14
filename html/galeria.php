@@ -50,11 +50,6 @@
         ?>
     </div>
 
-    <!-- Continúa con el pie de página... -->
-
-    <div class="content">
-        <!-- Contenido específico de cada página -->
-    </div>
 
 </div>
 
