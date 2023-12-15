@@ -13,7 +13,7 @@
             <p>Madrid-Barajas está situado al nordeste de Madrid, siendo el aeropuerto más grande de España.
                 Accesibilidad: El aeropuerto es accesible en coche, autobús y metro. Hay varios puntos alrededor del
                 aeropuerto que son accesibles para el spotting.</p>
-            <a href=galeria.php class="boton">¿Que aeronaves puedes encontrar aquí?</a>
+       
         </div>
         <div class="column">
             <div class="puntos1">
@@ -63,7 +63,6 @@
                 aéreas de los Estados Unidos. Posteriormente, fue transferida a la Fuerza Aérea Española en 1988.
                 (Parque
                 Corredor y Oasiz) nos facilitarán el aparcamiento.</p>
-            <a href=galeria.php class="boton">Exploremos los aerodinos de esta Base</a>
         </div>
 
         <div class="column">
@@ -100,7 +99,7 @@
                 largo
                 de los años, ha desempeñado un papel importante en el desarrollo y la fabricación de aeronaves en
                 España.</p>
-            <a href=galeria.php class="boton">Conoce sus aeronaves</a>
+
             <div class="column">
                 <div class="puntos2">
                     <h3>Lugares de Spotting</h3>
@@ -131,7 +130,7 @@
                     albergar el Museo del Aire de España, que exhibe una impresionante colección de aeronaves
                     históricas,
                     incluyendo aviones militares, helicópteros y más.</p>
-                <a href=galeria.php class="boton">En esta también hay helicópteros...</a>
+
                 <div class="column">
                     <div class="puntos3">
                         <h3>Lugares de Spotting</h3>

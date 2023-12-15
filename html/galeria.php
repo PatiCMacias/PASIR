@@ -12,7 +12,7 @@
         include '../Database/db_connect.php';
 
         // SQL para obtener información de los aviones
-        $sql = "SELECT modelo, tipo, alcance, img FROM AVIONES";
+        $sql = "SELECT modelo, tipo, alcance, img, idAEROPUERTOS FROM AVIONES";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
@@ -24,7 +24,8 @@
             <th>Modelo</th>
             <th>Tipo</th>
             <th>Alcance (km)</th>
-            <th style='width: 100px'>img</th>
+            <th style='width: 100px'>Imagen</th>
+             <th>Aeropuerto</th>
         </tr>
     </thead>";
 
@@ -37,6 +38,7 @@
                 echo "<td>" . htmlspecialchars($row["tipo"]) . "</td>";
                 echo "<td>" . htmlspecialchars($row["alcance"]) . "</td>";
                 echo "<td><img style='width: 100px;' src='" . htmlspecialchars($row["img"]) . "'></td>";
+                echo "<td>" . htmlspecialchars($row["idAEROPUERTOS"]) . "</td>";
                 echo "</tr>";
             }
             echo "</tbody>";

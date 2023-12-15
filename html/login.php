@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<section id="wrapper" class="login-register login-sidebar" style="background-image:url(../images/background/A310_LETO_4.jpg);">
+<section id="wrapper" class="login-register login-sidebar" style="background-image:url(../images/background/fotoevento.jpg);">
     <div class="login-box card">
         <div class="card-body">
 
@@ -47,7 +47,7 @@
                 </div>
                 <div class="form-group text-center m-t-20">
                     <div class="col-xs-12">
-                        <button class="btn btn-info btn-lg btn-block text-uppercase btn-rounded" type="submit">Ingresar</button>
+                        <button class="btn btn-info btn-lg btn-block text-uppercase btn-rounded" type="submit">Entrar</button>
                     </div>
                 </div>
                 <div class="row">
